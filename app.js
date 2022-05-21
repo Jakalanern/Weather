@@ -43,7 +43,7 @@ cityInput.addEventListener("input", function () {
 
 async function fetchWeather(city, key) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${apiKey} &q=${currentCity}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=${apiKey} &q=${currentCity}&aqi=no`
   )
   const data = await response.json()
   return data
