@@ -44,14 +44,23 @@ html {
   letter-spacing: 0.15em;
 }
 
+.input_alert {
+  display: none;
+  text-align: center;
+  color: rgb(239, 0, 0);
+  letter-spacing: 0.1em;
+}
+
 .city_input {
   font-family: "Roboto", sans-serif;
-  padding: 0.25em;
+  padding: 0.35em;
   font-size: 1.5rem;
+  border: none;
 }
 
 .city_input:focus {
   outline: none;
+  outline: 1px solid gray;
 }
 
 .main_box .title {
