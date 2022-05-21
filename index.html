@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Challenge #23</title>
+  </head>
+  <body id="body">
+    <div class="main_box">
+      <h1 class="title">JACK'S WEATHER APP</h1>
+      <input
+        type="text"
+        class="city_input"
+        placeholder="Please enter any city..."
+      />
+      <section class="weather_box">
+        <h1 class="city"></h1>
+        <div class="info_group info">
+          <h2 class="condition info"></h2>
+          <h2 class="temp info"></h2>
+          <h2 class="feels-like info"></h2>
+          <h2 class="humidity info"></h2>
+          <h2 class="wind_speed info"></h2>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.clouds.min.js"></script>
+    <script>
+      VANTA.CLOUDS({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+      })
+    </script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
